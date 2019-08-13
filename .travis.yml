@@ -1,0 +1,18 @@
+language: python
+python:
+- '3.6'
+cache: pip
+branches:
+  only:
+  - master
+script:
+- pip install mkdocs
+- mkdocs build --clean
+- docker build -t $DOCKER_USER/mkdocs .
+- docker tag $DOCKER_USER/mkdocs $DOCKER_USER/mkdocs:v2
+- docker login -u $DOCKER_USER -p $DOCKER_PASS
+- docker push $DOCKER_USER/mkdocs
+notifications:
+  email:
+    on_failure: change
+    on_success: change
