@@ -69,7 +69,7 @@ plugins:
 extra:
   social:
     - type: globe
-      link: http://struct.cc
+      link: http://www.mgaroz.pro
     - type: github-alt
       link: https://github.com/mgaroz
     - type: twitter
