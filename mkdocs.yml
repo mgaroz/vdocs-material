@@ -71,11 +71,11 @@ extra:
     - type: globe
       link: http://struct.cc
     - type: github-alt
-      link: https://github.com/squidfunk
+      link: https://github.com/mgaroz
     - type: twitter
-      link: https://twitter.com/squidfunk
+      link: https://twitter.com
     - type: linkedin
-      link: https://linkedin.com/in/squidfunk
+      link: https://linkedin.com/in/mgaroz
 
 # Extensions
 markdown_extensions:
