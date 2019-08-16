@@ -9,7 +9,7 @@ script:
 - pip install mkdocs
 - mkdocs build --clean
 - docker build -t $DOCKER_USER/mkdocs .
-- docker tag $DOCKER_USER/mkdocs $DOCKER_USER/mkdocs:v3
+- docker tag $DOCKER_USER/mkdocs $DOCKER_USER/mkdocs:0.1
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
 - docker push $DOCKER_USER/mkdocs
 notifications:
